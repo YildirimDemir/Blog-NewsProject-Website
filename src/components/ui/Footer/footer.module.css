@@ -1,0 +1,30 @@
+.footer{
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark);
+    border-top: 5px solid var(--white);
+}
+
+.footer .copyText{
+    font-size: 1rem;
+    color: #000000;
+    background: var(--orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+@media (max-width: 767px) { 
+    .footer .copyText{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer .copyText{
+        font-size: .6rem;
+    }
+}

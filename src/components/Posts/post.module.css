@@ -1,0 +1,211 @@
+.postsArea{
+    width: 100%;
+    min-height: 30vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 3px solid var(--white);
+}
+
+.postsArea h1{
+    font-family: monospace;
+    font-size: 2.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.postsArea .posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posts .postBox{
+    margin: 20px;
+    width: 240px;
+    height: 300px;
+    border: 3px solid var(--orange);
+    border-radius: 8px;
+    background-color: var(--white);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.postBox .imgBox{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postBox .textBox{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #fff;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+.textBox p{
+    font-size: 1.3rem;
+}
+
+.singlePostPage{
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.postArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.postImage{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postImage img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.postContent {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.postInfo{
+    display: flex;
+    width: 180px;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(117, 117, 117);
+    margin-bottom: 15px;
+}
+
+.postContent h1{
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: 600;
+    background: linear-gradient(135deg, #FF8F00, #FFDB00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.postContent p{
+    font-size: 1.1rem;
+    line-height: 30px;
+    width: 700px;
+}
+
+.likeAndComments{
+    margin-top: 50px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numberOfData{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.numberOfData span{
+    margin: 0px 20px;
+    font-size: 1.5rem;
+}
+
+.addComment input{
+    width: 300px;
+    border: 3px solid var(--orange);
+    border-radius: 8px 0px 0px 8px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.addComment button{
+    width: 100px;
+    border: 3px solid var(--orange);
+    border-left: none;
+    border-radius: 0px 8px 8px 0px;
+    padding: 5px 10px;
+    background-color: var(--white);
+}
+
+.postsComments{
+    margin-top: 30px;
+}
+
+.commentBox{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    border: 2px solid var(--white);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.commentBox span{
+    text-align: center;
+    border-bottom: 2px solid var(--white);
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.commentBox p{
+    text-align: center;
+}
+
+.categories{
+    width: 600px;
+    height: 60px;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+}
+
+.categories button{
+    padding: 4px 8px;
+    margin: 0px 10px;
+    border-radius: 8px;
+    background-color: var(--white);
+    height: 50px;
+}
+
+.activeCategory{
+    background-color: var(--orange) !important;
+}

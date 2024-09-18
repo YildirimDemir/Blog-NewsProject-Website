@@ -1,0 +1,115 @@
+.loginArea {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.loginFormArea {
+    width: 400px;
+    height: 350px;
+    border: 3px solid #FF8F00;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginFormArea h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    background: linear-gradient(135deg, #FF8F00, #FFDB00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formInputGroup {
+    display: flex;
+    flex-direction: column;
+    margin: 8px auto;
+    width: 100%;
+}
+
+.formInputGroup label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.formInputGroup input {
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #FF8F00;
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--bg-dark);
+}
+
+.inputTypePass{
+    border-radius: 8px 0px 0px 8px !important;
+}
+
+.btn {
+    padding: 8px 12px;
+    width: 100px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #FF8F00, #FFDB00);
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.formLink {
+    text-align: center;
+    color: #1f80ff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formLink:hover{
+    color: #1f80ff;
+}
+
+.passInput {
+    display: flex;
+}
+
+.toggleButton{
+    text-align: center;
+    border:  solid #FF8F00;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 1rem;
+    padding: 3px;
+    width: 50px;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    font-family: monospace;
+    font-size: .9rem;
+}
+
+.link:hover{
+    color: #1f80ff;
+}

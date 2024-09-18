@@ -1,0 +1,569 @@
+.main{
+    display: flex;
+    position: relative;
+    height: 85vh;
+}
+
+
+.sidebar {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: var(--dark);
+    border-right: 3px solid var(--white);
+}
+
+.sidemenu{
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+
+.sidemenu li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidemenu li button{
+    width: 160px;
+    height: 50px;
+    font-size: .9rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: left;
+    margin: 30px auto;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.settings{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.userInfo{
+    width: 400px;
+    height: 320px;
+    background-color: var(--dark);
+    border: 3px solid var(--orange);
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.userInfo h2{
+    font-size: 1.7rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.userInfo label{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.userInfo input{
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    background-color: var(--bg-dark);
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.btn{
+    padding: 8px 12px;
+    width: 80px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.passwordChange{
+    width: 400px;
+    height: 390px;
+    background-color: var(--dark);
+    border: 3px solid var(--orange);
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.passwordChange h2{
+    font-size: 1.7rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.passwordChange label{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.passwordChange input{
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--orange);
+    border-radius: 8px 0px 0px 8px;
+    background-color: var(--bg-dark);
+}
+
+.passInput {
+    display: flex;
+}
+
+.toggleButton{
+    text-align: center;
+    border:  solid var(--orange);
+    border-radius: 0px 8px 8px 0px;
+    font-size: 1rem;
+    padding: 3px;
+    width: 50px;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteAccount{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteAccount{
+    width: 400px;
+    height: 420px;
+    background-color: var(--dark);
+    border: 3px solid var(--orange);
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.deleteAccount h2{
+    font-size: 1.7rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.deleteAccount label{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.deleteAccount input{
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--orange);
+    border-radius: 8px 0px 0px 8px;
+    background-color: var(--bg-dark);
+}
+
+.likesArea{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.likesArea h2{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: monospace;
+    margin-bottom: 50px;
+}
+
+.likesArea .likes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    position: relative;
+}
+
+.likes a{
+    width: 200px;
+    height: 240px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.likes a image{
+    width: 100%;
+}
+
+.likes a p{
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.commentsArea{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.commentsArea h2{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: monospace;
+    margin-bottom: 50px;
+}
+
+.commentsArea .comments{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 60px;
+}
+
+.commentBox{
+    width: 210px;
+    height: 150px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 5px;
+    overflow-y: scroll;
+    gap: 5px;
+    border: 3px solid var(--orange);
+    margin: 20px;
+}
+
+.commentBox a{
+    color: rgb(205, 131, 40);
+}
+
+/* .commentText {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    overflow: scroll;
+    margin-top: 5px;
+} */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .sidebar {
+        width: 250px;
+    }
+    .sidemenu li button{
+        width: 130px;
+        height: 50px;
+        margin: 20px auto;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid #1c1c1c;
+        height: 20vh;
+    }
+
+    .sidemenu{
+        width: 100%;
+        margin: auto;
+        padding: 20px 10px;
+    }
+    
+    .sidemenu li {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .sidemenu li button{
+        width: 110px;
+        height: 40px;
+        margin: 10px;
+        font-size: .9rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .settings {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        padding: 20px 10px;
+    }
+
+    .userInfo{
+        width: 370px;
+        height: 320px;
+    }
+    
+    .userInfo h2{
+        font-size: 1.5rem;
+    }
+    
+    .userInfo label{
+        font-size: 1rem;
+    }
+    
+    .userInfo input{
+        height: 35px;
+        font-size: .9rem;
+    }
+    
+    
+    .btn{
+        width: 70px;
+        font-size: .9rem;
+    }
+
+    .userInfo .btn{
+        margin-top: 30px;
+    }
+    
+    .passwordChange{
+        width: 370px;
+        height: 370px;
+    }
+    
+    .passwordChange h2{
+        font-size: 1.5rem;
+    }
+    
+    .passwordChange label{
+        font-size: 1rem;
+    }
+    
+    .passwordChange input{
+        font-size: .9rem;
+        height: 35px;
+    }
+
+    .toggleButton{
+        font-size: .9rem;
+        width: 45px;
+    }
+
+    .deleteAccount{
+        width: 370px;
+        height: 390px;
+    }
+
+    .deleteAccount form{
+        width: 100%;
+    }
+    
+    .deleteAccount h2{
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+    
+    .deleteAccount label{
+        font-size: 1rem;
+    }
+    
+    .deleteAccount input{
+       height: 35px;
+       font-size: .9rem;
+    }
+
+    .deleteAccount .btn{
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid var(--white);
+        min-height: 20vh;
+    }
+
+    .sidemenu{
+        width: 100%;
+        margin: auto;
+        padding: 20px 10px;
+    }
+    
+    .sidemenu li {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .sidemenu li button{
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        font-size: .9rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .settings {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        padding: 20px 5px;
+    }
+
+    .userInfo{
+        width: 290px;
+        height: 310px;
+    }
+    
+    .userInfo h2{
+        font-size: 1.4rem;
+    }
+    
+    .userInfo label{
+        font-size: 1rem;
+    }
+    
+    .userInfo input{
+        height: 35px;
+        font-size: .9rem;
+    }
+    
+    
+    .btn{
+        width: 60px;
+        font-size: .9rem;
+    }
+
+    .userInfo .btn{
+        margin-top: 30px;
+    }
+    
+    .passwordChange{
+        width: 290px;
+        height: 365px;
+    }
+    
+    .passwordChange h2{
+        font-size: 1.4rem;
+    }
+    
+    .passwordChange label{
+        font-size: 1rem;
+    }
+    
+    .passwordChange input{
+        font-size: .9rem;
+        height: 35px;
+    }
+
+    .toggleButton{
+        font-size: .9rem;
+        width: 35px;
+    }
+
+    .deleteAccount{
+        width: 290px;
+        height: 390px;
+    }
+
+    .deleteAccount form{
+        width: 100%;
+    }
+    
+    .deleteAccount h2{
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    
+    .deleteAccount label{
+        font-size: 1rem;
+    }
+    
+    .deleteAccount input{
+       height: 35px;
+       font-size: .9rem;
+    }
+
+    .deleteAccount .btn{
+        margin-top: 30px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+}
